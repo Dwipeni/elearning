@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Youth Course</title>
+    <title>SIABELA</title>
     <link rel="icon" href="{{ asset('frontemplate') }}/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('frontemplate') }}/css/bootstrap.min.css">
@@ -33,7 +33,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="index.html"> Youth Course </a>
+                        <a class="navbar-brand" href="index.html"> SIABELA </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -103,7 +103,7 @@
                 <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="single-footer-widget footer_1">
                         <a href="index.html"> <b>
-                                <h2>Youth Course</h2>
+                                <h2>SIABELA</h2>
                             </b></a>
                         <p>Platform belajar online nomor 1 di Indonesia</p>
                     </div>
@@ -114,7 +114,7 @@
                         <div class="social_icon">
                             <a href="#"> <i class="ti-facebook"></i> </a>
                             <a href="#"> <i class="ti-twitter-alt"></i> </a>
-                            <a href="#"> <i class="ti-instagram"></i> </a>
+                            <a href="https://instagram.com/airlanggamalang"> <i class="ti-instagram"></i> </a>
                             <a href="#"> <i class="ti-skype"></i> </a>
                         </div>
                     </div>
@@ -125,7 +125,7 @@
                         <div class="contact_info">
                             <p><span> Address :</span> Indonesia </p>
                             <p><span> Phone :</span> +62 8152 3520 5715</p>
-                            <p><span> Email : </span>youthcourse@gmail.com </p>
+                            <p><span> Email : </span>bmbairlangga@gmail.com </p>
                         </div>
                     </div>
                 </div>

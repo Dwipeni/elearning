@@ -39,11 +39,6 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td>Nominal</td>
-                                <td class="py-2 px-3">:</td>
-                                <td> Rp 50.000,00 </td>
-                            </tr>
-                            <tr>
                                 <td>Aksi</td>
                                 <td>:</td>
                                 <td>
@@ -64,9 +59,6 @@
                             </tr>
                         </table>
                     </div>
-                    <td>
-                        <img alt="image" src="{{ $item->admin/bukti_transfer/.png }}" width="100">
-                    </td>
                     <div class="col-md-6">
                         <img src="{{ asset('storage/'.$transaksi->bukti_transfer) }}" width="100%" alt="" srcset="">
                     </div>

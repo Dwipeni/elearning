@@ -20,8 +20,6 @@
                                 <th>Nama User</th>
                                 <th>Status</th>
                                 <th>Tanggal Bayar</th>
-                                <th>Nominal</th>
-                                <th>Bukti Transaksi</th>
                                 <th width="10%">Aksi</th>
                             </tr>
                         </thead>
@@ -40,10 +38,6 @@
                                     @endif
                                 </td>
                                 <td>{{ substr($item->created_at,0,10) }}</td>
-                                <td>Rp 50.000,00</td>
-                                <td>
-                                    <img alt="image" src="{{ $item->admin/bukti_transfer/.png }}" width="100">
-                                </td>
                                 <td>
                                     <a href="{{ route('admin.transaksi.detail',Crypt::encrypt($item->id)) }}"
                                         class="btn btn-warning">Detail</a>

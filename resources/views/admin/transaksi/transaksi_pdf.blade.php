@@ -22,8 +22,6 @@
                 <th>Nama User</th>
                 <th>Status</th>
                 <th>Tanggal Bayar</th>
-                <th>Nominal</th>
-                <th>Bukti Transaksi</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -41,10 +39,6 @@
                     @endif
                 </td>
                 <td>{{ substr($item->created_at,0,10) }}</td>
-                <td>Rp 50.000,00</td>
-                <td>
-                    <img alt="image" src="{{ asset('admintemplate/') }}/img/struk.png" width="100">
-                </td>
             </tr>
 			@endforeach
 		</tbody>
