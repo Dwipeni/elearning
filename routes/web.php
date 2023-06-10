@@ -20,8 +20,12 @@ Route::get('/about', 'App\Http\Controllers\front\WelcomeController@about')->name
 Route::get('/kelas', 'App\Http\Controllers\front\KelasController@index')->name('kelas');
 Route::get('/kelas/detail/{id}', 'App\Http\Controllers\front\KelasController@detail')->name('kelas.detail');
 Route::get('/kelas/belajar/{id}/{idvideo}', 'App\Http\Controllers\front\KelasController@belajar')->name('kelas.belajar');
+Route::get('/jadwal', 'App\Http\Controllers\front\JadwalController@index')->name('jadwal');
+Route::get('/jadwal/detail/{id}', 'App\Http\Controllers\front\jadwalController@detail')->name('jadwal.detail');
 Route::get('/podcast', 'App\Http\Controllers\front\PodcastController@index')->name('podcast');
 Route::get('/podcast/detail/{id}', 'App\Http\Controllers\front\PodcastController@detail')->name('podcast.detail');
+Route::get('/pendaftaran', 'App\Http\Controllers\front\PendaftaranController@index')->name('pendaftaran');
+Route::post('/pendaftaran/simpan', 'App\Http\Controllers\front\PendaftaranController@simpan')->name('front.pendaftaran.simpan');
 
 //seputar akun
 Route::group(['middleware' => ['auth', 'checkRole:regular,premium']], function () {
@@ -52,6 +56,25 @@ Route::group(['middleware' => ['auth', 'checkRole:admin']], function () {
     Route::get('/admin/kelas/tambahvideo/{id}', 'App\Http\Controllers\admin\KelasController@tambahvideo')->name('admin.kelas.tambahvideo');
     Route::post('/admin/kelas/simpanvideo/{id}', 'App\Http\Controllers\admin\KelasController@simpanvideo')->name('admin.kelas.simpanvideo');
     Route::get('/admin/kelas/hapusvideo/{id}/{idkelas}', 'App\Http\Controllers\admin\KelasController@hapusvideo')->name('admin.kelas.hapusvideo');
+
+    //Jadwal
+    Route::get('/admin/jadwal', 'App\Http\Controllers\admin\JadwalController@index')->name('admin.jadwal');
+    Route::get('/admin/jadwal/tambah', 'App\Http\Controllers\admin\JadwalController@tambah')->name('admin.jadwal.tambah');
+    Route::post('/admin/jadwal/simpan', 'App\Http\Controllers\admin\JadwalController@simpan')->name('admin.jadwal.simpan');
+    Route::get('/admin/jadwal/detail/{id}', 'App\Http\Controllers\admin\JadwalController@detail')->name('admin.jadwal.detail');
+    Route::get('/admin/jadwal/hapus/{id}', 'App\Http\Controllers\admin\JadwalController@hapus')->name('admin.jadwal.hapus');
+    Route::get('/admin/jadwal/edit/{id}', 'App\Http\Controllers\admin\JadwalController@edit')->name('admin.jadwal.edit');
+    Route::post('/admin/jadwal/update/{id}', 'App\Http\Controllers\admin\JadwalController@update')->name('admin.jadwal.update');
+
+    //Pendaftaran
+    Route::get('/admin/pendaftaran', 'App\Http\Controllers\admin\PendaftaranController@index')->name('admin.pendaftaran');
+    Route::get('/admin/pendaftaran/tambah', 'App\Http\Controllers\admin\PendaftaranController@tambah')->name('admin.pendaftaran.tambah');
+    Route::post('/admin/pendaftaran/simpan', 'App\Http\Controllers\admin\PendaftaranController@simpan')->name('admin.pendaftaran.simpan');
+    Route::get('/admin/pendaftaran/detail/{id}', 'App\Http\Controllers\admin\PendaftaranController@detail')->name('admin.pendaftaran.detail');
+    Route::get('/admin/pendaftaran/hapus/{id}', 'App\Http\Controllers\admin\PendaftaranController@hapus')->name('admin.pendaftaran.hapus');
+    Route::get('/admin/pendaftaran/edit/{id}', 'App\Http\Controllers\admin\PendaftaranController@edit')->name('admin.pendaftaran.edit');
+    Route::post('/admin/pendaftaran/update/{id}', 'App\Http\Controllers\admin\PendaftaranController@update')->name('admin.pendaftaran.update');
+    Route::get('/admin/pendaftaran/pendaftaran_pdf', 'App\Http\Controllers\admin\PendaftaranController@cetak_pdf')->name('admin.pendaftaran.pendaftaran_pdf');
 
     //User
     Route::get('/admin/user', 'App\Http\Controllers\admin\UserController@index')->name('admin.user');

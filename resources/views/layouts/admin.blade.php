@@ -22,6 +22,7 @@
 </head>
 
 <body>
+<!-- <script src="https://kit.fontawesome.com/c96bb81d42.js" crossorigin="anonymous"></script> -->
     <div id="app">
         <div class="main-wrapper">
             <div class="navbar-bg"></div>
@@ -81,6 +82,11 @@
                                 <i class="fas fa-university"></i><span>Kelas</span>
                             </a>
                         </li>
+                        <li class="{{Request::path() == 'admin/jadwal' ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('admin.jadwal') }}">
+                                <i class="fas fa-calendar"></i><span>Jadwal</span>
+                            </a>
+                        </li>
                         <li class="{{Request::path() == 'admin/podcast' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('admin.podcast') }}">
                                 <i class="fas fa-microphone"></i><span>Podcast</span>
@@ -97,6 +103,11 @@
                                 <li class=""><a class="nav-link"
                                         href="{{ route('admin.transaksi.disetujui') }}">Disetujui</a></li>
                             </ul>
+                        </li>
+                        <li class="{{Request::path() == 'admin/pendaftaran' ? 'active' : '' }}">
+                            <a class="nav-link" href="{{ route('admin.pendaftaran') }}">
+                                <i class="fas fa-address-card"></i><span>Pendaftaran</span>
+                            </a>
                         </li>
                         <li class="{{Request::path() == 'admin/setting' ? 'active' : '' }}">
                             <a class="nav-link" href="{{ route('admin.setting') }}">
@@ -121,9 +132,8 @@
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2021 <div class="bullet"></div> Design Template By <a
-                        href="https://github.com/Berlianyuni">Berlian Yuni Rahmawati</a> And Developed App By <a
-                        href="https://github.com/Dwipeni">Dwi Peni Ningsih</a>
+                    Copyright &copy; 2021 <div class="bullet"></div> Sistem Informasi Akademik 
+                    <a href="https://github.com/Berlianyuni">Bimbingan Belajar AirLangga Malang</a> 
                 </div>
                 <div class="footer-right">
                     2.3.0

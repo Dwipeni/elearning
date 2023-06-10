@@ -50,6 +50,9 @@
                                     <a class="nav-link" href="{{ route('kelas') }}">Kelas</a>
                                 </li>
                                 <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('jadwal') }}">Jadwal</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="{{ route('podcast') }}">Podcast</a>
                                 </li>
                                 <li class="nav-item">
@@ -60,7 +63,7 @@
                                     <a class="nav-link" href="{{ route('login') }}">Masuk</a>
                                 </li>
                                 <li class="d-none d-lg-block">
-                                    <a class="btn_1" href="{{ route('register') }}">Daftar</a>
+                                    <a class="btn_1" href="{{ route('register') }}">Buat Akun</a>
                                 </li>
                                 @else
                                 <li class="nav-item dropdown">
@@ -143,9 +146,10 @@
                                     Copyright &copy;<script>
                                         document.write(new Date().getFullYear());
                                     </script> All rights reserved <i class="ti-heart"
-                                        aria-hidden="true"></i> by <a href="https://colorlib.com"
-                                        target="_blank">Project PWL</a> & Developed Apps By <a
-                                        href="https://github.com/Dwipeni">Berlian Yuni & Dwi Peni</a>
+                                        aria-hidden="true"></i> Sistem Informasi Akademik 
+                                        <a href="https://colorlib.com" target="_blank">Bimbingan Belajar</a> 
+                                        <!-- & Developed Apps By  -->
+                                        <a href="https://github.com/Dwipeni">AirLangga Malang</a>
                                     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                                 </p>
                             </div>

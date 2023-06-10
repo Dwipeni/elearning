@@ -53,7 +53,7 @@
                         <button type="submit" class="btn_4 py-2 btn-block">
                             {{ __('Login') }}
                         </button>
-                        <p class="mt-3">Belum punya akun ? <a href="{{ route('register') }}">Daftar</a></p>
+                        <p class="mt-3">Belum punya akun ? <a href="{{ route('register') }}">Buat Akun</a></p>
                     </div>
                     {{-- @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}">

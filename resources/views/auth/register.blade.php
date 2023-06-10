@@ -59,7 +59,7 @@
                         <button type="submit" class="btn_4 py-2 btn-block">
                             Buat Akun
                         </button>
-                        <p class="mt-3">Sudah punya akun? <a href="{{ route('login') }}">Login</a></p>
+                        <p class="mt-3">Sudah punya akun? <a href="{{ route('login') }}">Masuk</a></p>
                     </div>
                 </form>
             </div>
